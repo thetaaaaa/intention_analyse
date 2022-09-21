@@ -3,13 +3,11 @@
 # @Author:LinLitao
 # @Time : 2022/9/5 19:35 
 # @Description:构造数据集
-import random
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
-from tqdm import tqdm, trange
+from tqdm import tqdm
 
-data = pd.read_excel('data/xmc_taged.xlsx', index_col=[0])
+data = pd.read_excel('data/xmc_taged0921.xlsx', index_col=[0])
 corpus = []
 for row in tqdm(data.itertuples()):
     for attr in data.columns[2:]:
