@@ -14,6 +14,8 @@ for row in tqdm(data.itertuples()):
         if getattr(row, attr) == 1:
             corpus.append([row.title, row.desc, attr])
 
+corpus = corpus[:5500]
+
 cut_idx = len(corpus) // 10
 
 corpus = pd.DataFrame(corpus, columns=['title', 'desc', 'label'])
