@@ -35,5 +35,5 @@ desc_train.to_csv('xmc/desc/train.tsv', sep='\t', index=0, header=None)
 desc_test.to_csv('xmc/desc/test.tsv', sep='\t', index=0, header=None)
 # 标题——描述文本数据集
 tile_desc_train, tile_desc_test = train_corpus[['label', 'title', 'desc']], test_corpus[['label', 'title', 'desc']]
-tile_desc_train.to_csv('xmc/title_desc/train.tsv', sep='\t', index=0, header=None)
-tile_desc_test.to_csv('xmc/title_desc/test.tsv', sep='\t', index=0, header=None)
+tile_desc_train.to_csv('xmc/title_desc/train.tsv', sep='\t', index=0) # , header=None
+tile_desc_test.to_csv('xmc/title_desc/test.tsv', sep='\t', index=0) # , header=None
